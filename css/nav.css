@@ -162,7 +162,7 @@ header nav .bell:hover ion-icon{
     justify-content: space-evenly;
     align-items: center;
     /* background-color: var(--color2); */
-    z-index: 100;
+    z-index: 10000009;
 }
 
 .navsmall div{

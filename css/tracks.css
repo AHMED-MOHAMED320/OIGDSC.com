@@ -301,7 +301,7 @@ header .imgback{
 @media(max-width:900px) {
     header .titlepage{
         margin-top:75px ;
-        width: 90%;
+        width: 95%;
         height: 25%;
     }
     header .imgback{
@@ -317,7 +317,7 @@ header .imgback{
     }
 
     .details_round{
-        width: 69%;
+        width: 95%;
         height: 55%;
         max-height: 250px;
     }
@@ -327,7 +327,7 @@ header .imgback{
         height: 60%;
     }
     .sta{
-        width: 100%;
+        width: 95%;
         padding: 10px;
         height: fit-content;
     }
