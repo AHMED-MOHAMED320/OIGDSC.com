@@ -1,32 +1,31 @@
 
-let counter = 0;
+let c = 0;
 let limit =70;
 let number = document.getElementById("num");
 
 setInterval(()=>{
-    if(counter==limit)
+    if(c==limit)
     {
         clearInterval();
     }
     else {
-        counter += 1;
-        number.innerHTML = counter + "%";
+        c += 1;
+        number.innerHTML = c + "%";
     }
 },2000 / limit)
 
 let number2 = document.getElementById("num2");
-let counter2 = 0;
+let c2 = 0;
 let limit2 =90;
 setInterval(()=>{
-    if(counter2==limit2)
+    if(c2==limit2)
     {
         clearInterval();
     }
     else {
-        counter2 += 1;
-        number2.innerHTML = counter2 + "%";
+        c2 += 1;
+        number2.innerHTML = c2 + "%";
     }
 },2000 / limit2)
         
 
-    
