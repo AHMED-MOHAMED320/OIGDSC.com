@@ -298,7 +298,6 @@ header .imgback{
 @media(max-width:900px) {
     header .titlepage{
         margin-top:75px ;
-        margin-bottom: 0;
         width: 95%;
         height: 25%;
     }
@@ -311,21 +310,24 @@ header .imgback{
     .sec2{
         flex-direction: column;
         width: 95%;
+        height: fit-content;
         position: absolute;
-        bottom: 90px;
         left: 2.5%;
         justify-content: flex-start;
         row-gap: 10px;
+        margin-bottom: 90px;
     }
 
     .details_round{
         width: 95%;
-        height: 55%;
+        height:fit-content;
         max-height: 250px;
+        padding: 10px;
+
     }
     
     .details_round .timer{
-        row-gap: 5px;
+        row-gap: 10px;
         height: 60%;
     }
     .sta{
@@ -349,4 +351,5 @@ header .imgback{
         bottom: 0;
         transform: translate(-50%,-50%);
     }
+
 }
