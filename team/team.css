@@ -74,7 +74,7 @@ header{
     position: absolute;
     height: 6px;
     width: 6px;
-    bottom: -5px;
+    bottom: -7px;
     left: calc(50% + 18px);
     border-radius:3px;
     background-color: var(--color3);
@@ -278,6 +278,9 @@ header{
     }
     .detailsleader ul li{
         padding: 5px;
+    }
+    .part2{
+        width:90%;
     }
 
     .up_to_home{
