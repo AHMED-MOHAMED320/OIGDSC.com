@@ -15,37 +15,71 @@
 header{
     width: 100%;
     height: 100vh;
-    background-color: #fff;
+    background-color: var(--color1);
     position: relative;
 }
 
 .section2inheader {
     width: 100%;
-    height: calc(100% - 150px);
-    margin: auto;
-    top: 70px;
+    height: 90%;
+    top: 40px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header .hi {
-    width: 100%;
-    height: 45%;
+    width: 50%;
+    height: 100%;
     position: relative;
     margin-top: 4%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    row-gap: 15px;
 }
 
-.tracks{
-    margin-top: 10px;
-    width:35% ;
-    max-width: 350px;
+header .homeimg{
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+header .homeimg .homeimg1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .homeimg .homeimg1 img{
+    height: 350px;
+    animation: up 10s linear infinite;
+}
+
+@keyframes up {
+    0%,
+  100% {
+    transform:rotate(5deg)
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.tracks{
+    width:100% ;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     column-gap: 25px;
+    row-gap: 10px;
     flex-wrap: wrap;
     border-radius: 8px;
     z-index: 100;
@@ -56,14 +90,15 @@ header .hi {
     content: "Tracks";
     width: fit-content;
     background-color: var(--color1);
+    border: 1px solid var(--color4);
     text-align: center;
     font-size: 1.1rem;
     font-weight: 500;
     padding: 3px 10px;
     border-radius: 3px;
-    color: rgb(233, 233, 233);
+    color:var(--color2);
     position: absolute;
-    top: -30px;
+    top: -35px;
     box-shadow: var(--shadow);
 }
 
@@ -71,7 +106,8 @@ header .hi {
     width: 70px;
     height: 70px;
     position: relative;
-    background-color:var(--color1);
+    background-color: var(--color1);
+    border: 1px solid var(--color4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,8 +153,8 @@ header .hi {
         
     }
     50%{
-        filter:drop-shadow(0px 0px 3px var(--colortra))
-        drop-shadow(0px 0px 5px var(--colortra));
+        filter:drop-shadow(0px 0px 5px var(--colortra))
+        drop-shadow(0px 0px 3px var(--colortra));
     }
     
 } 
@@ -126,13 +162,14 @@ header .hi {
 .tracks div img {
     width: 35px;
 }
+
 header .hi .text{
-    width: 35%;
-    max-width: 600px;
+    width: 90%;
+    max-width: 530px;
     min-width: 350px;
     height: 100%;
     max-height: 200px;
-    color: var(--color1);
+    color: var(--color2);
     font-size: 1.7rem;
     font-weight: 700;
     text-transform: capitalize;
@@ -141,145 +178,7 @@ header .hi .text{
     text-align: center;
 }
 
-header .image-header {
-    width: 30%;
-    min-width: 300px;
-    height: 40%;
-    position: absolute;
-    bottom: 15%;
-    left: -10px;
-}
 
-header .image-header img{
-    width: 100%;
-}
-
-.gifheader {
-    width: 25%;
-    min-width: 250px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-.gifheader img {
-    width: 100%;
-}
-
-.progress {
-    width: 340px;
-    height: 160px;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 101;
-}
-
-.outer{
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-    padding: 20px;
-    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-    -6px -6px 10px -1px rgba(255,255,255,0.7);
-}
-
-.inner {
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    box-shadow: inset 4px 4px 10px -1px rgba(0,0,0,0.2),
-    inset -4px -4px 10px -1px rgba(255,255,255,0.7),
-    -0.5px -0.5px 0px  rgba(255,255,255,1),
-    0.5px 0.5px 0px  rgba(0,0,0,0.15),
-    0px 12px 10px -10px rgba(0,0,0,0.05);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#num,#num2 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #555;
-}
-
-#cr1,#cr2 {
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-}
-
-#cr1{
-    animation: pro 2s linear forwards;
-}
-@keyframes pro{
-    100%{
-        stroke-dashoffset:150 ;
-    }
-}
-
-#cr2{
-    animation: pro2 2s linear forwards;
-}
-@keyframes pro2{
-    100%{
-        stroke-dashoffset:70 ;
-    }
-}
-
-.one svg{
-    position: absolute;
-    top:0;
-    left: 0;
-}
-
-.two svg {
-    position: absolute;
-    top:0;
-    right: 0;
-}
-.one,.two{
-    position: relative;
-}
-.one::before,.two::before {
-    content: "text";
-    position: absolute;
-    width: 90px;
-    height: 30px;
-    bottom:-30px;
-    right:50%;
-    transform: translate(50%,50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to right,rgb(117, 117, 117),var(--color1));
-    color: #fff;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    box-shadow: var(--shadow);
-    /* font-weight: 500; */
-}
-
-.one::before{
-    content: "Attendees";
-}
-
-.two::before {
-    content: "Solutions";
-}
-/* blur div */
-
-
-
-/*  */
 header .social {
     height: 30px;
     position: absolute;
@@ -328,19 +227,10 @@ header .social img{
         background-color: var(--color1);
     }
     .section2inheader {
-        top: 70px;
+        top: 40px;
         height: 80%;
-        margin: auto;
     }
-    .gifheader {
-        display: none;
-    }
-    header .image-header{
-        display: none;
-    }
-    .progress {
-    display: none;
-    }
+
     header .hi{
         width:90% ;
         height: 100%;
@@ -352,13 +242,15 @@ header .social img{
         color:var(--color2);
         font-size: 1.4rem;
         width: 100%;
-        height: fit-content;
+        height: 30%;
     }
     .tracks{
         height: 50%;
         max-height: 280px;
         width: 100%;
-        
+    }
+    header .homeimg{
+        display: none;
     }
     header .social {
        display: none;
