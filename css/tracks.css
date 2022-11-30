@@ -331,7 +331,7 @@ header .imgback{
         height: 60%;
     }
     .sta{
-        width: 95%;
+        width: fit-content;
         padding: 10px;
         height: fit-content;
     }
