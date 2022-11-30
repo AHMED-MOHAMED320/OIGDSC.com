@@ -64,7 +64,7 @@ header{
     position: absolute;
     width: 50%;
     height: 6px;
-    bottom: -5px;
+    bottom: -7px;
     border-radius:3px;
     background-color: var(--color3);
 }
@@ -98,7 +98,7 @@ header{
 }
 
 #uiux .bio{
-    font-size: 0.87rem;
+    font-size: 0.95rem;
 }
 
 .leader{
@@ -248,11 +248,11 @@ header{
     .part1{
         flex-direction: column;
         justify-content: space-between;
-        height: 450px;
+        height: fit-content;
     }
     .part1 .title{
         width: 100%;
-        height: 35%;
+        height: 30px;
         flex-direction: column;
     }
 
@@ -262,21 +262,15 @@ header{
         padding-bottom: 5px;
     }
     .title .bio{
-        width: 100%;
-        height: 70%;
-        width: 100%;
-        font-size: 1rem;
-        padding-top: 25px;
+        display: none;
         
     }
     .leader{
         width: 100%;
-        height: 50%;
         justify-content: space-between;
     }
     .leader .imgleader{
         width: 50%;
-
     }
 
     .detailsleader ul{
@@ -307,6 +301,10 @@ header{
     animation: o 1s linear infinite;
 }
 
+.owner .t2{
+    animation: o2 1s linear infinite;
+
+}
 .founder img{
     height: 85%;
 }
@@ -320,4 +318,16 @@ header{
         }
         
     
+}
+
+@keyframes o2 {
+
+    0%{
+        
+    }
+    50%{
+        filter: drop-shadow(0px 0px 5px rgb(0, 255, 0)) ;
+    }
+    
+
 }
