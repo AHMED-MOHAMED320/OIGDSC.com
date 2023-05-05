@@ -4,7 +4,7 @@ document.querySelector(".bell").onclick = function(){
 //---------------------------------------
 
 
-let countDownDate = new Date("Dec 23, 2022 23:59:59").getTime();
+let countDownDate = new Date("Dec 23, 2023 23:59:59").getTime();
 // console.log(countDownDate);
 
 let counter = setInterval(() => {
